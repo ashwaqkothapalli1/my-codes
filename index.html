@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Honey V/S Bunny</title>
+</head>
+    <style>   
+        body {
+            
+
+        #increaseBtn:hover, #decreaseBtn:hover {
+            transform: scale(1.1); 
+        }
+        #increaseBtn:hover, #increaseBtn:hover {
+            transform: scale(1.1); 
+        }
+
+        
+    </style>
+<body>
+       <center>
+    <h1>Score: <span id="score">0</span></h1>
+    <img src="honey%20comb.jpg" alt="Increase Score" id="increaseBtn" onclick="increaseScore()">
+    <img src="honey%20bee.jpg" alt="Decrease Score" id="decreaseBtn" onclick="decreaseScore()">
+       </center>
+<script>
+    
+    
+    var score = 0;
+
+function increaseScore() {
+    score += 5;
+    updateScore();
+}
+
+function decreaseScore() {
+    score -=5;
+    updateScore();
+}
+
+function updateScore() {
+    document.getElementById("score").innerHTML = score;
+}
+    
+     </script>
+</body>
+</html>
+    
+    
+
